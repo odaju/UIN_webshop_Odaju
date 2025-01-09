@@ -1,4 +1,20 @@
-p{
-    font-size: 40px;
-    font-weight: bold;
+:root {
+    --yellow: #FFD700;
+    --red: #DA291C;
+    --blue: #006Db7;
+    --green: #00AF4D;
+    --white: #fff;
+    --black: #000;
+}
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: var(--yellow);
 }
