@@ -1,12 +1,16 @@
+import { useState } from "react";
 import CategoryHeading from "./CategoryHeading";
 import ProductCard from "./ProductCard";
-export default function PageContent({products}) {
+export default function PageContent({products, setCartCount }) {
+    
+    const [title, setTitle] = useState("Ninjago")
+    
     return(
         <main>
-            <CategoryHeading title="Ninjago"/>
+            <CategoryHeading title={title}/>
             <div id="productlist">
                 {products.map((product, index) => (
-                <ProductCard product={product} key={`FCT_${index}`} />
+                <ProductCard product={product} key={`FCT_${index}`} setCartCount={setCartCount}/>
                 ))}
             </div>
             {/* <!--
