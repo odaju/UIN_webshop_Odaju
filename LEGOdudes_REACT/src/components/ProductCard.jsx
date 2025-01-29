@@ -1,7 +1,6 @@
 // Produktkort-komponent som tar inn et produkt som prop
 export default function ProductCard({ product, setCartCount }) {
-
-  const handleClick = ()=>{
+  const handleClick = () => {
     setCartCount(10);
   };
 
